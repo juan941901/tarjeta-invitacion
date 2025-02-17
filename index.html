@@ -15,19 +15,77 @@
             /* Centra la imagen */
             background-repeat: no-repeat;
             /* Evita que la imagen se repita */
-            height: 100vh;
-            /* Ocupar toda la altura de la pantalla */
+            width: 500px;
+            height: 842px;
+
+        }
+
+        .wrapper-hero {
+            display: flex;
+            justify-content: center;
+        }
+
+        #wrapper-content-hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        #titulo {
+            font-size: 50px;
+            color: #000000;
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+
+        #nombre {
+            font-size: 70px;
+            color: #000000;
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+
+        #fecha-evento {
+            font-size: 24px;
+            color: #000000;
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+
+        #desplazamiento {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
         }
     </style>
 
 </head>
 
 <body>
-    <section id="hero-section">
-        <div>
-            
-        </div>
-    </section>
+    <div class="wrapper-hero">
+        <section id="hero-section">
+            <div id="wrapper-content-hero">
+                <div>
+                    <h1 id="titulo">MIS XV AÑOS</h1>
+                </div>
+                <div>
+                    <h2 id="nombre">Fátima</h2>
+                </div>
+                <div>
+                    <h2 id="fecha-evento">01 DE JULIO 2024</h2>
+                </div>
+                <div id="desplazamiento">
+                    <img src="img/keyboard_double_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="icono desplazamiento">
+                    <h2 id="fecha-evento">DESLIZA</h2>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
