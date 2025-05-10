@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <script src="./scr/libraries/index.global.js"></script>
     <style>
         #hero-section {
             background-image: url('img/portada-texturas-color-azulycafe-modelogrecia.png');
@@ -61,6 +61,37 @@
             align-items: center;
             padding-top: 2rem;
         }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 382px;
+            width: 498px;
+            background-color: black;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .texto-invitacion {
+            font-size: 5rem;
+            color: white;
+            transform: translateZ(-1000px);
+            opacity: 0;
+            animation: venirDesdeFondo 2s ease-out forwards;
+        }
+
+        @keyframes venirDesdeFondo {
+            0% {
+                transform: translateZ(-1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateZ(0);
+                opacity: 1;
+            }
+        }
     </style>
 
 </head>
@@ -85,6 +116,9 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div class="contenedor">
+        <p class="texto-invitacion">Te invito a celebrar el inicio de una nueva etapa en mi vida, llena de sueños, metas y grandes logros.</p>
     </div>
 </body>
 

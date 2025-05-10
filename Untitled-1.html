@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .texto-invitacion {
+            font-size: 5rem;
+            color: white;
+            transform: translateZ(-1000px);
+            opacity: 0;
+            animation: venirDesdeFondo 2s ease-out forwards;
+        }
+
+        @keyframes venirDesdeFondo {
+            0% {
+                transform: translateZ(-1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateZ(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <p class="texto">¡Hola Mundo!</p>
+    </div>
+
+</body>
+
+</html>
