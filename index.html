@@ -7,6 +7,13 @@
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <script src="./scr/libraries/index.global.js"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+
+        }
+
         #hero-section {
             background-image: url('img/portada-texturas-color-azulycafe-modelogrecia.png');
             background-size: cover;
@@ -23,6 +30,7 @@
         .wrapper-hero {
             display: flex;
             justify-content: center;
+
         }
 
         #wrapper-content-hero {
@@ -62,24 +70,102 @@
             padding-top: 2rem;
         }
 
-        .contenedor {
+        .contenedor_invitacion {
             display: flex;
             justify-content: center;
-            align-items: center;
+            flex-direction: column;
             height: 382px;
             width: 498px;
-            background-color: black;
+            background-color: #3C5B78;
             perspective: 1000px;
             overflow: hidden;
         }
 
         .texto-invitacion {
-            font-size: 5rem;
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 0;
+            line-height: 1.8;
             color: white;
             transform: translateZ(-1000px);
             opacity: 0;
             animation: venirDesdeFondo 2s ease-out forwards;
         }
+
+        .contenedor_agradecimientos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 485px;
+            width: 498px;
+            border: #000000 solid 1px;
+        }
+
+        .texto-agradecimientos {
+            font-size: 1.2rem;
+            text-align: center;
+            letter-spacing: 0;
+            line-height: 1.8;
+            color: black;
+        }
+
+        .contenedor_fecha {
+            background-image: url('img/portada-texturas-color-azulycafe-modelogrecia.png');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 382px;
+            width: 498px;
+        }
+
+        .reloj {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            width: 498px;
+        }
+
+        .contenedor_ceremonia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-left: #000000 solid 1px;
+            border-right: #000000 solid 1px;
+            width: 498px;
+        }
+
+        .contenedor_recepcion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-left: #000000 solid 1px;
+            border-right: #000000 solid 1px;
+            width: 498px;
+            padding-top: 3rem;
+        }
+
+        .boton-maps {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285F4;
+            /* Azul Google */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-maps:hover {
+            background-color: #3367D6;
+        }
+
 
         @keyframes venirDesdeFondo {
             0% {
@@ -117,9 +203,123 @@
             </div>
         </section>
     </div>
-    <div class="contenedor">
-        <p class="texto-invitacion">Te invito a celebrar el inicio de una nueva etapa en mi vida, llena de sueños, metas y grandes logros.</p>
+    <div class="wrapper-hero ">
+        <div class="contenedor_invitacion">
+            <p class="texto-invitacion">Te invito a celebrar el inicio de una nueva etapa en mi vida, llena de
+                sueños,metas y grandes logros.</p>
+            <p class="texto-invitacion">❤️</p>
+        </div>
     </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_agradecimientos">
+            <div style="width: 80%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
+                <p class="texto-agradecimientos">Con la bendición de Dios y en compañía de mis padres y padrinos</p>
+                <br>
+                <p class="texto-agradecimientos">Mis Padres Sr. Roberto González Treviño Sra. Ana Garza Martínez</p>
+                <br>
+                <p class="texto-agradecimientos">Mis Padrinos Sr. Eduardo Castillo Torres Sra. María Gallardo Campos</p>
+                <br>
+                <p class="texto-agradecimientos">Nos complace invitarte a ser parte de este gran día.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_fecha">
+            <p style="font-size: 50px;">Faltan</p>
+            <div class="reloj">
+                <div class="unidad">
+                    <div id="dias" style="font-size: 35px;">0</div>
+                    <span style="font-size: 16px;">Días</span>
+                </div>
+                <div class="unidad">
+                    <div id="horas" style="font-size: 35px;">0</div>
+                    <span style="font-size: 16px;">Horas</span>
+                </div>
+                <div class="unidad">
+                    <div id="minutos" style="font-size: 35px;">0</div>
+                    <span style="font-size: 16px;">Minutos</span>
+                </div>
+                <div class="unidad">
+                    <div id="segundos" style="font-size: 35px;">0</div>
+                    <span style="font-size: 16px;">Segundos</span>
+                </div>
+            </div>
+            <p style="font-size: 50px;">para mis xv años</p>
+        </div>
+    </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_ceremonia">
+            <p style="font-size: 50px;">Dónde y Cuándo</p>
+            <img src="img/fotosdeiglesia.webp" alt="Iglesia" style="width: 438px;height: 328px;">
+            <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
+                <p class="texto-agradecimientos">Ceremonia Religiosa</p>
+                <br>
+                <p class="texto-agradecimientos">Catedral de Santa María la Real de Almudena</p>
+                <br>
+                <p class="texto-agradecimientos">18:00 hrs</p>
+                <br>
+                <p class="texto-agradecimientos">C. de Bailén, 10, 28013 Madrid </p>
+                <br>
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://www.google.com/maps?q=4.60971,-74.08175" target="_blank" class="boton-maps">
+                        Ver Mapa
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_recepcion">
+            <img src="img/fotosdeiglesia.webp" alt="Iglesia" style="width: 438px;height: 328px;">
+            <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
+                <p class="texto-agradecimientos">Recepción</p>
+                <br>
+                <p class="texto-agradecimientos">La casa de Mónico</p>
+                <br>
+                <p class="texto-agradecimientos">18:00 hrs</p>
+                <br>
+                <p class="texto-agradecimientos">C. de Cabeza de Manzaneda, 105, 28023 Madrid</p>
+                <br>
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://www.google.com/maps?q=4.60971,-74.08175" target="_blank" class="boton-maps">
+                        Ver Mapa
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // 🕒 Fecha destino (ajusta a la que necesites)
+        const fechaObjetivo = new Date("2025-06-08T23:59:59");
+
+        function actualizarCuentaRegresiva() {
+            const ahora = new Date();
+            const diferencia = fechaObjetivo - ahora;
+
+            if (diferencia <= 0) {
+                document.querySelector(".reloj").innerHTML = "¡Tiempo terminado!";
+                clearInterval(intervalo);
+                return;
+            }
+
+            const segundos = Math.floor((diferencia / 1000) % 60);
+            const minutos = Math.floor((diferencia / 1000 / 60) % 60);
+            const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+            document.getElementById("dias").textContent = dias;
+            document.getElementById("horas").textContent = horas;
+            document.getElementById("minutos").textContent = minutos;
+            document.getElementById("segundos").textContent = segundos;
+        }
+
+        const intervalo = setInterval(actualizarCuentaRegresiva, 1000);
+        actualizarCuentaRegresiva(); // Ejecutar inmediatamente al cargar
+    </script>
 </body>
 
 </html>
