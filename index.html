@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=MonteCarlo&display=swap"
+        rel="stylesheet">
+
     <script src="./scr/libraries/index.global.js"></script>
     <style>
         * {
@@ -15,7 +21,7 @@
         }
 
         #hero-section {
-            background-image: url('img/portada-texturas-color-azulycafe-modelogrecia.png');
+            background-image: url('img/portada-texturas-color-verdeolivo-modeloperu.webp');
             background-size: cover;
             /* Ajusta la imagen al tamaño del section */
             background-position: center;
@@ -76,13 +82,13 @@
             flex-direction: column;
             height: 382px;
             width: 498px;
-            background-color: #3C5B78;
+            background-color: #7F9158;
             perspective: 1000px;
             overflow: hidden;
         }
 
         .texto-invitacion {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             text-align: center;
             letter-spacing: 0;
             line-height: 1.8;
@@ -93,11 +99,12 @@
         }
 
         .contenedor_agradecimientos {
+            background-image: url("img/fondo-dorado-largo.webp");
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 485px;
+            height: 550px;
             width: 498px;
             border: #000000 solid 1px;
         }
@@ -111,7 +118,7 @@
         }
 
         .contenedor_fecha {
-            background-image: url('img/portada-texturas-color-azulycafe-modelogrecia.png');
+            background-image: url('img/portada-texturas-color-verdeolivo-modeloperu.webp');
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -129,6 +136,7 @@
         }
 
         .contenedor_ceremonia {
+            background-image: url("img/fondo-dorado-largo.webp");
             display: flex;
             justify-content: center;
             align-items: center;
@@ -139,6 +147,7 @@
         }
 
         .contenedor_recepcion {
+            background-image: url("img/fondo-dorado-largo.webp");
             display: flex;
             justify-content: center;
             align-items: center;
@@ -178,7 +187,7 @@
             background-color: #3367D6;
         }
 
-         .timeline {
+        .timeline {
             position: relative;
             /* margin: 100px auto; */
             width: 90%;
@@ -263,13 +272,15 @@
         <section id="hero-section">
             <div id="wrapper-content-hero">
                 <div>
-                    <h1 id="titulo">MIS XV AÑOS</h1>
+                    <h1 id="titulo">Nos Casamos</h1>
                 </div>
                 <div>
-                    <h2 id="nombre">Fátima</h2>
+                    <h2 id="nombre">Jhon</h2>
+                    <h2 id="nombre">Y</h2>
+                    <h2 id="nombre">Eliana</h2>
                 </div>
                 <div>
-                    <h2 id="fecha-evento">01 DE JULIO 2024</h2>
+                    <h2 id="fecha-evento">28 DE JUNIO 2025</h2>
                 </div>
                 <div id="desplazamiento">
                     <img src="img/keyboard_double_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
@@ -281,19 +292,26 @@
     </div>
     <div class="wrapper-hero ">
         <div class="contenedor_invitacion">
-            <p class="texto-invitacion">Te invito a celebrar el inicio de una nueva etapa en mi vida, llena de
-                sueños,metas y grandes logros.</p>
-            <p class="texto-invitacion">❤️</p>
+            <div
+                style="display: flex;flex-direction: column;justify-content: center;align-items: center;width: 80%;margin-left: 3rem;">
+                <p class="texto-invitacion">Luego de tanto tiempo de nuestra hermosa historia llego el momento de darnos
+                    el sí ante al altar, si al amor, si a la vida juntos.</p>
+                <p class="texto-invitacion">❤️</p>
+            </div>
         </div>
     </div>
     <div class="wrapper-hero">
         <div class="contenedor_agradecimientos">
             <div style="width: 80%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
-                <p class="texto-agradecimientos">Con la bendición de Dios y en compañía de mis padres y padrinos</p>
+                <p class="texto-agradecimientos">Con la bendición de Dios y en compañía de nuestros padres</p>
                 <br>
-                <p class="texto-agradecimientos">Mis Padres Sr. Roberto González Treviño Sra. Ana Garza Martínez</p>
+                <p class="texto-agradecimientos">Padres de la novia</p>
+                <p class="texto-agradecimientos">Sr. Didier Pescador</p>
+                <p class="texto-agradecimientos">Sra. Luz Dary Zapata</p>
                 <br>
-                <p class="texto-agradecimientos">Mis Padrinos Sr. Eduardo Castillo Torres Sra. María Gallardo Campos</p>
+                <p class="texto-agradecimientos">Padres del novio</p>
+                <p class="texto-agradecimientos">Sr. Jose Fernando Giraldo</p>
+                <p class="texto-agradecimientos">Sra. Luz Marina Marin</p>
                 <br>
                 <p class="texto-agradecimientos">Nos complace invitarte a ser parte de este gran día.</p>
                 <br>
@@ -321,24 +339,24 @@
                     <span style="font-size: 16px;">Segundos</span>
                 </div>
             </div>
-            <p style="font-size: 50px;">para mis xv años</p>
+            <p style="font-size: 50px;">Para nuestra boda</p>
         </div>
     </div>
     <div class="wrapper-hero">
         <div class="contenedor_ceremonia">
             <p style="font-size: 50px;">Dónde y Cuándo</p>
-            <img src="img/fotosdeiglesia.webp" alt="Iglesia" style="width: 438px;height: 328px;">
+            <img src="img/iglesia-santa-rita_dos.webp" alt="Iglesia" style="width: 438px;height: 328px;">
             <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
                 <p class="texto-agradecimientos">Ceremonia Religiosa</p>
                 <br>
-                <p class="texto-agradecimientos">Catedral de Santa María la Real de Almudena</p>
+                <p class="texto-agradecimientos">Parroquia santa Rita de Casia</p>
                 <br>
-                <p class="texto-agradecimientos">18:00 hrs</p>
+                <p class="texto-agradecimientos">07:00 PM</p>
                 <br>
-                <p class="texto-agradecimientos">C. de Bailén, 10, 28013 Madrid </p>
+                <p class="texto-agradecimientos">Carrera 20 # 80 - 60</p>
                 <br>
                 <div style="display: flex; justify-content: center;">
-                    <a href="https://www.google.com/maps?q=4.60971,-74.08175" target="_blank" class="boton-maps">
+                    <a href="https://www.google.com/maps?q=3.439977, -76.472381" target="_blank" class="boton-maps">
                         Ver Mapa
                     </a>
                 </div>
@@ -348,18 +366,19 @@
     </div>
     <div class="wrapper-hero">
         <div class="contenedor_recepcion">
-            <img src="img/fotosdeiglesia.webp" alt="Iglesia" style="width: 438px;height: 328px;">
+            <img src="img/fotosderecepcion.webp" alt="Iglesia" style="width: 438px;height: 328px;">
             <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
                 <p class="texto-agradecimientos">Recepción</p>
                 <br>
-                <p class="texto-agradecimientos">La casa de Mónico</p>
+                <p class="texto-agradecimientos">Unidad Recreativa Villa Del Sur</p>
                 <br>
-                <p class="texto-agradecimientos">18:00 hrs</p>
+                <p class="texto-agradecimientos">09:00 PM</p>
                 <br>
-                <p class="texto-agradecimientos">C. de Cabeza de Manzaneda, 105, 28023 Madrid</p>
+                <p class="texto-agradecimientos">Calle 26B # 43 Villa del sur</p>
                 <br>
                 <div style="display: flex; justify-content: center;">
-                    <a href="https://www.google.com/maps?q=4.60971,-74.08175" target="_blank" class="boton-maps">
+                    <a href="https://www.google.com/maps?q=3.4122869113481085, -76.5199422687371" target="_blank"
+                        class="boton-maps">
                         Ver Mapa
                     </a>
                 </div>
@@ -368,44 +387,44 @@
         </div>
     </div>
     <div class="wrapper-hero">
-        <div class="contenedor_itinerario" >
+        <div class="contenedor_itinerario">
             <div class="timeline">
                 <div class="progress-line" id="progress-line"></div>
                 <div style="display: flex;flex-direction: column;margin-left: 1.5rem;">
-                <div class="timeline-item">
-                    <div class="icon filled" >⛪</div>
-                    <div class="content">
-                        <p style="font-size: 21px;">19:30 HRS</p>
-                        <p style="font-size: 35px;">Ceremonia Religiosa</p>
-                        <img src="img/iconocolordoradoiglesia-300x300.png" alt="Iglesia" style="width: 250px;">
+                    <div class="timeline-item">
+                        <div class="icon filled">⛪</div>
+                        <div class="content">
+                            <p style="font-size: 21px;">07:00 PM</p>
+                            <p style="font-size: 35px;">Ceremonia Religiosa</p>
+                            <img src="img/iconocolordoradoiglesia-300x300.png" alt="Iglesia" style="width: 250px;">
+                        </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="icon">🥂</div>
-                    <div class="content">
-                        <p style="font-size: 21px;">19:30 HRS</p>
-                        <p style="font-size: 35px;">Cocktail</p>
-                        <img src="img/EB-Iconos-web-41-300x300.png" alt="Vestido" style="width: 250px;">
+                    <div class="timeline-item">
+                        <div class="icon">🥂</div>
+                        <div class="content">
+                            <p style="font-size: 21px;">09:00 PM</p>
+                            <p style="font-size: 35px;">Cocktail</p>
+                            <img src="img/EB-Iconos-web-41-300x300.png" alt="Vestido" style="width: 250px;">
+                        </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="icon">🎉</div>
-                    <div class="content">
-                        <p style="font-size: 21px;">19:30 HRS</p>
-                        <p style="font-size: 35px;">Fiesta</p>
-                        <img src="img/iconocolordoradoplato-300x300.png" alt="Fiesta" style="width: 250px;">
+                    <div class="timeline-item">
+                        <div class="icon">🎉</div>
+                        <div class="content">
+                            <p style="font-size: 21px;">09:30 PM</p>
+                            <p style="font-size: 35px;">Cena</p>
+                            <img src="img/iconocolordoradoplato-300x300.png" alt="Fiesta" style="width: 250px;">
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-item">
+                    <!-- <div class="timeline-item">
                     <div class="icon">🎶</div>
                     <div class="content">
                         <p style="font-size: 21px;">19:30 HRS</p>
                         <p style="font-size: 35px;">A bailar</p>
                         <img src="img/iconocolordoradomusica-300x300.png" alt="Fiesta" style="width: 250px;">
                     </div>
-                </div>
+                </div> -->
 
                 </div>
             </div>
@@ -414,7 +433,7 @@
 
     <script>
         // 🕒 Fecha destino (ajusta a la que necesites)
-        const fechaObjetivo = new Date("2025-06-08T23:59:59");
+        const fechaObjetivo = new Date("2025-06-28T19:00:00");
 
         function actualizarCuentaRegresiva() {
             const ahora = new Date();
