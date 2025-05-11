@@ -36,6 +36,7 @@
         .wrapper-hero {
             display: flex;
             justify-content: center;
+            width: 498px;
 
         }
 
@@ -87,6 +88,24 @@
             overflow: hidden;
         }
 
+        .contenedor_agradecimientos_invitados {
+            background-image: url('img/portada-texturas-color-verdeolivo-modeloperu.webp');
+            background-size: 498px;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 382px;
+            width: 498px;
+            perspective: 1000px;
+            overflow: hidden;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
+        }
+
+
+
         .texto-invitacion {
             font-size: 1.2rem;
             text-align: center;
@@ -120,7 +139,8 @@
             border-left: #7F9158 solid 1px;
             border-right: #7F9158 solid 1px;
         }
-        .contenedor_codigo_vestimenta{
+
+        .contenedor_codigo_vestimenta {
             background-image: url("img/fondo-dorado-largo.webp");
             display: flex;
             justify-content: center;
@@ -132,13 +152,35 @@
             border-right: #7F9158 solid 1px;
         }
 
-        .contenedor_regalos{
+        .contenedor_regalos {
             background-image: url("img/fondo-dorado-largo.webp");
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             height: 450px;
+            width: 498px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
+        }
+
+        .contenedor_fotos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 2688px;
+            width: 498px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
+        }
+
+        .contenedor_footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90px;
             width: 498px;
             border-left: #7F9158 solid 1px;
             border-right: #7F9158 solid 1px;
@@ -325,9 +367,9 @@
                     <h1 id="titulo" class="lora-text">Nos Casamos</h1>
                 </div>
                 <div>
-                    <h2 id="nombre" class="montecarlo-regular">Jhon</h2>
+                    <h2 id="nombre" class="montecarlo-regular">Jhon Giraldo</h2>
                     <h2 id="nombre" class="montecarlo-regular">Y</h2>
-                    <h2 id="nombre" class="montecarlo-regular">Eliana</h2>
+                    <h2 id="nombre" class="montecarlo-regular">Eliana Pescador</h2>
                 </div>
                 <div>
                     <h2 id="fecha-evento" class="lora-text">28 DE JUNIO 2025</h2>
@@ -418,7 +460,7 @@
     </div>
     <div class="wrapper-hero">
         <div class="contenedor_recepcion">
-            <img src="img/fotosderecepcion.webp" alt="Iglesia" style="width: 438px;height: 328px;">
+            <img src="img/recepcion.webp" alt="Iglesia" style="width: 438px;height: 328px;">
             <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#7F9158 solid 1px;">
                 <p class="texto-agradecimientos montecarlo-regular" style="font-size: 45px;">Recepción</p>
                 <br>
@@ -462,7 +504,7 @@
                     </div>
 
                     <div class="timeline-item">
-                        <div class="icon">🎉</div>
+                        <div class="icon">🍽️</div>
                         <div class="content">
                             <p style="font-size: 21px;" class="lora-text">09:30 PM</p>
                             <p style="font-size: 35px;" class="lora-text">Cena</p>
@@ -509,10 +551,47 @@
         <div class="contenedor_regalos">
             <p class="texto-agradecimientos montecarlo-regular" style="font-size: 45px;">Regalos</p>
             <div style="width: 80%;">
-            <p class="texto-agradecimientos lora-text" style="font-size: 25px;">El regalo es opcional, la asistencia obligatoria pero si quieres tener un detalle con nosotros te damos algunas ideas.</p>
+                <p class="texto-agradecimientos lora-text" style="font-size: 25px;">El regalo es opcional, la asistencia
+                    obligatoria pero si quieres tener un detalle con nosotros te damos algunas ideas.</p>
             </div>
             <img src="img/mail_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="sobre" style="width: 100px;">
             <p class="texto-agradecimientos lora-text" style="font-size: 25px;">Lluvia de sobres</p>
+        </div>
+    </div>
+    <div class="wrapper-hero ">
+        <div class="contenedor_agradecimientos_invitados">
+            <div
+                style="display: flex;flex-direction: column;justify-content: center;align-items: center;width: 80%;margin-left: 3rem;">
+                <p class="texto-invitacion montecarlo-regular "
+                    style="font-size: 35px;line-height: 60px;color: #000000;">Gracias por acompañarnos en este día tan
+                    especial para nosotros</p>
+                <img src="img/favorite_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg" alt="sobre" style="width: 50px;">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-hero ">
+        <div class="contenedor_fotos">
+            <img src="img/foto_uno.webp" alt="foto uno">
+            <img src="img/foto_dos.webp" alt="foto dos">
+            <img src="img/foto_tres.webp" alt="foto tres">
+            <img src="img/foto_cuatro.webp" alt="foto cuatro">
+            <img src="img/foto_cinco.webp" alt="foto cinco">
+        </div>
+    </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_footer">
+            <div>
+                <p class="texto-agradecimientos lora-text" style="font-size: 15px;">Copyright <span id="anio"></span> |
+                    Diseño de Invitación Digital por Max Ilusiones</p>
+            </div>
+            <div style="display: flex;flex-direction: row;gap: 5rem;margin-top: 0.2rem;">
+                <a href="https://www.facebook.com/share/1BrhWwNDbJ/" target="_blank">
+                    <img src="img/facebook-brands.svg" alt="Icono facebook" width="35">
+                </a>
+                <a href="https://www.instagram.com/maxilusiones?igsh=YnRsZHZ4OHU1ZHd1" target="_blank">
+                    <img src="img/instagram-brands.svg" alt="Icono instagram" width="35">
+                </a>
+            </div>
         </div>
     </div>
     <script>
@@ -582,7 +661,10 @@
         // Asignar los valores a los elementos HTML
         invitadoUno.textContent = invitad_uno;
         invitadoDos.textContent = invitad_dos;
-        console.log(invitad_uno + invitad_dos);
+        // Obtener el año actual
+        const fechaActual = new Date();
+        const anio = document.getElementById('anio');
+        anio.textContent = fechaActual.getFullYear();
     </script>
 </body>
 
