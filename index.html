@@ -106,8 +106,44 @@
             flex-direction: column;
             height: 550px;
             width: 498px;
-            border: #000000 solid 1px;
+            border: #7F9158 solid 1px;
         }
+
+        .contenedor_invitados {
+            background-image: url("img/fondo-dorado-largo.webp");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 320px;
+            width: 498px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
+        }
+        .contenedor_codigo_vestimenta{
+            background-image: url("img/fondo-dorado-largo.webp");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 450px;
+            width: 498px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
+        }
+
+        .contenedor_regalos{
+            background-image: url("img/fondo-dorado-largo.webp");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 450px;
+            width: 498px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
+        }
+
 
         .texto-agradecimientos {
             font-size: 1.2rem;
@@ -141,8 +177,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            border-left: #000000 solid 1px;
-            border-right: #000000 solid 1px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
             width: 498px;
         }
 
@@ -152,8 +188,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            border-left: #000000 solid 1px;
-            border-right: #000000 solid 1px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
             width: 498px;
             padding-top: 3rem;
         }
@@ -164,8 +200,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            border-left: #000000 solid 1px;
-            border-right: #000000 solid 1px;
+            border-left: #7F9158 solid 1px;
+            border-right: #7F9158 solid 1px;
             width: 498px;
             padding-top: 3rem;
         }
@@ -173,7 +209,7 @@
         .boton-maps {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #4285F4;
+            background-color: #7F9158;
             /* Azul Google */
             color: white;
             text-decoration: none;
@@ -201,7 +237,7 @@
             top: 0;
             left: -1px;
             width: 2px;
-            background: #2c3e50;
+            background: #7F9158;
             z-index: 1;
             height: 0%;
             transition: height 0.2s ease-out;
@@ -252,6 +288,20 @@
             transform: translateY(0);
         }
 
+        .montecarlo-regular {
+            font-family: "MonteCarlo", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .lora-text {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         @keyframes venirDesdeFondo {
             0% {
                 transform: translateZ(-1000px);
@@ -272,20 +322,20 @@
         <section id="hero-section">
             <div id="wrapper-content-hero">
                 <div>
-                    <h1 id="titulo">Nos Casamos</h1>
+                    <h1 id="titulo" class="lora-text">Nos Casamos</h1>
                 </div>
                 <div>
-                    <h2 id="nombre">Jhon</h2>
-                    <h2 id="nombre">Y</h2>
-                    <h2 id="nombre">Eliana</h2>
+                    <h2 id="nombre" class="montecarlo-regular">Jhon</h2>
+                    <h2 id="nombre" class="montecarlo-regular">Y</h2>
+                    <h2 id="nombre" class="montecarlo-regular">Eliana</h2>
                 </div>
                 <div>
-                    <h2 id="fecha-evento">28 DE JUNIO 2025</h2>
+                    <h2 id="fecha-evento" class="lora-text">28 DE JUNIO 2025</h2>
                 </div>
                 <div id="desplazamiento">
                     <img src="img/keyboard_double_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
                         alt="icono desplazamiento">
-                    <h2 id="fecha-evento">DESLIZA</h2>
+                    <h2 id="fecha-evento" class="lora-text">DESLIZA</h2>
                 </div>
             </div>
         </section>
@@ -294,69 +344,71 @@
         <div class="contenedor_invitacion">
             <div
                 style="display: flex;flex-direction: column;justify-content: center;align-items: center;width: 80%;margin-left: 3rem;">
-                <p class="texto-invitacion">Luego de tanto tiempo de nuestra hermosa historia llego el momento de darnos
+                <p class="texto-invitacion lora-text">Luego de tanto tiempo de nuestra hermosa historia llego el momento
+                    de darnos
                     el sí ante al altar, si al amor, si a la vida juntos.</p>
-                <p class="texto-invitacion">❤️</p>
+                <p class="texto-invitacion lora-text">❤️</p>
             </div>
         </div>
     </div>
     <div class="wrapper-hero">
         <div class="contenedor_agradecimientos">
-            <div style="width: 80%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
-                <p class="texto-agradecimientos">Con la bendición de Dios y en compañía de nuestros padres</p>
+            <div style="width: 80%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#7F9158 solid 1px;">
+                <p class="texto-agradecimientos lora-text">Con la bendición de Dios y en compañía de nuestros padres</p>
                 <br>
-                <p class="texto-agradecimientos">Padres de la novia</p>
-                <p class="texto-agradecimientos">Sr. Didier Pescador</p>
-                <p class="texto-agradecimientos">Sra. Luz Dary Zapata</p>
+                <p class="texto-agradecimientos lora-text">Padres de la novia</p>
+                <p class="texto-agradecimientos lora-text">Sr. Didier Pescador</p>
+                <p class="texto-agradecimientos lora-text">Sra. Luz Dary Zapata</p>
                 <br>
-                <p class="texto-agradecimientos">Padres del novio</p>
-                <p class="texto-agradecimientos">Sr. Jose Fernando Giraldo</p>
-                <p class="texto-agradecimientos">Sra. Luz Marina Marin</p>
+                <p class="texto-agradecimientos lora-text">Padres del novio</p>
+                <p class="texto-agradecimientos lora-text">Sr. Jose Fernando Giraldo</p>
+                <p class="texto-agradecimientos lora-text">Sra. Luz Marina Marin</p>
                 <br>
-                <p class="texto-agradecimientos">Nos complace invitarte a ser parte de este gran día.</p>
+                <p class="texto-agradecimientos lora-text">Nos complace invitarte a ser parte de este gran día.</p>
                 <br>
             </div>
         </div>
     </div>
     <div class="wrapper-hero">
         <div class="contenedor_fecha">
-            <p style="font-size: 50px;">Faltan</p>
+            <p style="font-size: 50px;" class="montecarlo-regular">Faltan</p>
             <div class="reloj">
                 <div class="unidad">
-                    <div id="dias" style="font-size: 35px;">0</div>
-                    <span style="font-size: 16px;">Días</span>
+                    <div id="dias" style="font-size: 35px;" class="lora-text">0</div>
+                    <span style="font-size: 16px;" class="lora-text">Días</span>
                 </div>
                 <div class="unidad">
-                    <div id="horas" style="font-size: 35px;">0</div>
-                    <span style="font-size: 16px;">Horas</span>
+                    <div id="horas" style="font-size: 35px;" class="lora-text">0</div>
+                    <span style="font-size: 16px;" class="lora-text">Horas</span>
                 </div>
                 <div class="unidad">
-                    <div id="minutos" style="font-size: 35px;">0</div>
-                    <span style="font-size: 16px;">Minutos</span>
+                    <div id="minutos" style="font-size: 35px;" class="lora-text">0</div>
+                    <span style="font-size: 16px;" class="lora-text">Minutos</span>
                 </div>
                 <div class="unidad">
-                    <div id="segundos" style="font-size: 35px;">0</div>
-                    <span style="font-size: 16px;">Segundos</span>
+                    <div id="segundos" style="font-size: 35px;" class="lora-text">0</div>
+                    <span style="font-size: 16px;" class="lora-text">Segundos</span>
                 </div>
             </div>
-            <p style="font-size: 50px;">Para nuestra boda</p>
+            <p style="font-size: 50px;" class="montecarlo-regular">Para nuestra boda</p>
         </div>
     </div>
     <div class="wrapper-hero">
         <div class="contenedor_ceremonia">
-            <p style="font-size: 50px;">Dónde y Cuándo</p>
+            <p style="font-size: 50px;" class="montecarlo-regular">Dónde y Cuándo</p>
             <img src="img/iglesia-santa-rita_dos.webp" alt="Iglesia" style="width: 438px;height: 328px;">
-            <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
-                <p class="texto-agradecimientos">Ceremonia Religiosa</p>
+            <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#7F9158 solid 1px;">
+                <p class="texto-agradecimientos montecarlo-regular" style="font-size: 45px;">Ceremonia Religiosa</p>
                 <br>
-                <p class="texto-agradecimientos">Parroquia santa Rita de Casia</p>
+                <p class="texto-agradecimientos lora-text">Parroquia santa Rita de Casia</p>
                 <br>
-                <p class="texto-agradecimientos">07:00 PM</p>
+                <p class="texto-agradecimientos lora-text">07:00 PM</p>
                 <br>
-                <p class="texto-agradecimientos">Carrera 20 # 80 - 60</p>
+                <p class="texto-agradecimientos lora-text">Carrera 20 # 80 - 60</p>
                 <br>
                 <div style="display: flex; justify-content: center;">
-                    <a href="https://www.google.com/maps?q=3.439977, -76.472381" target="_blank" class="boton-maps">
+                    <a href="https://www.google.com/maps?q=3.439977, -76.472381" target="_blank"
+                        class="boton-maps lora-text">
                         Ver Mapa
                     </a>
                 </div>
@@ -367,18 +419,18 @@
     <div class="wrapper-hero">
         <div class="contenedor_recepcion">
             <img src="img/fotosderecepcion.webp" alt="Iglesia" style="width: 438px;height: 328px;">
-            <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#000000 solid 1px;">
-                <p class="texto-agradecimientos">Recepción</p>
+            <div style="width: 88%;padding: 1.5rem 1.5rem 1.5rem 1.5rem;border:#7F9158 solid 1px;">
+                <p class="texto-agradecimientos montecarlo-regular" style="font-size: 45px;">Recepción</p>
                 <br>
-                <p class="texto-agradecimientos">Unidad Recreativa Villa Del Sur</p>
+                <p class="texto-agradecimientos lora-text">Unidad Recreativa Villa Del Sur</p>
                 <br>
-                <p class="texto-agradecimientos">09:00 PM</p>
+                <p class="texto-agradecimientos lora-text">09:00 PM</p>
                 <br>
-                <p class="texto-agradecimientos">Calle 26B # 43 Villa del sur</p>
+                <p class="texto-agradecimientos lora-text">Calle 26B # 43 Villa del sur</p>
                 <br>
                 <div style="display: flex; justify-content: center;">
                     <a href="https://www.google.com/maps?q=3.4122869113481085, -76.5199422687371" target="_blank"
-                        class="boton-maps">
+                        class="boton-maps lora-text">
                         Ver Mapa
                     </a>
                 </div>
@@ -394,8 +446,8 @@
                     <div class="timeline-item">
                         <div class="icon filled">⛪</div>
                         <div class="content">
-                            <p style="font-size: 21px;">07:00 PM</p>
-                            <p style="font-size: 35px;">Ceremonia Religiosa</p>
+                            <p style="font-size: 21px;" class="lora-text">07:00 PM</p>
+                            <p style="font-size: 35px;" class="lora-text">Ceremonia Religiosa</p>
                             <img src="img/iconocolordoradoiglesia-300x300.png" alt="Iglesia" style="width: 250px;">
                         </div>
                     </div>
@@ -403,8 +455,8 @@
                     <div class="timeline-item">
                         <div class="icon">🥂</div>
                         <div class="content">
-                            <p style="font-size: 21px;">09:00 PM</p>
-                            <p style="font-size: 35px;">Cocktail</p>
+                            <p style="font-size: 21px;" class="lora-text">09:00 PM</p>
+                            <p style="font-size: 35px;" class="lora-text">Brindis</p>
                             <img src="img/EB-Iconos-web-41-300x300.png" alt="Vestido" style="width: 250px;">
                         </div>
                     </div>
@@ -412,8 +464,8 @@
                     <div class="timeline-item">
                         <div class="icon">🎉</div>
                         <div class="content">
-                            <p style="font-size: 21px;">09:30 PM</p>
-                            <p style="font-size: 35px;">Cena</p>
+                            <p style="font-size: 21px;" class="lora-text">09:30 PM</p>
+                            <p style="font-size: 35px;" class="lora-text">Cena</p>
                             <img src="img/iconocolordoradoplato-300x300.png" alt="Fiesta" style="width: 250px;">
                         </div>
                     </div>
@@ -430,7 +482,39 @@
             </div>
         </div>
     </div>
-
+    <div class="wrapper-hero">
+        <div class="contenedor_invitados">
+            <div style="width: 80%;">
+                <p class="texto-agradecimientos montecarlo-regular" style="font-size: 45px;">Invitados</p>
+                <br>
+                <p id="invitadoUno" class="texto-agradecimientos lora-text" style="font-size: 35px;"></p>
+                <p id="invitadoDos" class="texto-agradecimientos lora-text" style="font-size: 35px;"></p>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <a href="https://www.google.com/maps?q=3.439977, -76.472381" target="_blank"
+                    class="boton-maps lora-text">
+                    Confirmar Asistencia
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_codigo_vestimenta">
+            <p class="texto-agradecimientos montecarlo-regular" style="font-size: 45px;">Código de vestimenta</p>
+            <img src="img/iconodresscode.webp" alt="codigo_vestimenta" style="width: 250px;">
+            <p class="texto-agradecimientos lora-text" style="font-size: 35px;">Formal</p>
+        </div>
+    </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_regalos">
+            <p class="texto-agradecimientos montecarlo-regular" style="font-size: 45px;">Regalos</p>
+            <div style="width: 80%;">
+            <p class="texto-agradecimientos lora-text" style="font-size: 25px;">El regalo es opcional, la asistencia obligatoria pero si quieres tener un detalle con nosotros te damos algunas ideas.</p>
+            </div>
+            <img src="img/mail_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="sobre" style="width: 100px;">
+            <p class="texto-agradecimientos lora-text" style="font-size: 25px;">Lluvia de sobres</p>
+        </div>
+    </div>
     <script>
         // 🕒 Fecha destino (ajusta a la que necesites)
         const fechaObjetivo = new Date("2025-06-28T19:00:00");
@@ -487,6 +571,18 @@
                 }
             });
         });
+
+        // Obtener el valor de la URL
+        const params = new URLSearchParams(window.location.search);
+        const invitad_uno = params.get('invitad_uno');
+        const invitad_dos = params.get('invitad_dos');
+        const invitadoUno = document.getElementById('invitadoUno');
+        const invitadoDos = document.getElementById('invitadoDos');
+
+        // Asignar los valores a los elementos HTML
+        invitadoUno.textContent = invitad_uno;
+        invitadoDos.textContent = invitad_dos;
+        console.log(invitad_uno + invitad_dos);
     </script>
 </body>
 
