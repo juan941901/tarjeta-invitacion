@@ -1,47 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Timeline con Scroll</title>
     <style>
-        .contenedor {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-            perspective: 1000px;
-            overflow: hidden;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #f4f4f4;
         }
 
-        .texto-invitacion {
-            font-size: 5rem;
+        .timeline {
+            position: relative;
+            margin: 100px auto;
+            width: 90%;
+            max-width: 500px;
+            padding-left: 40px;
+            border-left: 2px solid #ccc;
+        }
+
+        .progress-line {
+            position: absolute;
+            top: 0;
+            left: -1px;
+            width: 2px;
+            background: #2c3e50;
+            z-index: 1;
+            height: 0%;
+            transition: height 0.2s ease-out;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 150px;
+        }
+
+        .timeline-item .icon {
+            position: absolute;
+            left: -33px;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #eee;
+            color: #777;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .timeline-item .icon.filled {
+            background: #2c3e50;
             color: white;
-            transform: translateZ(-1000px);
-            opacity: 0;
-            animation: venirDesdeFondo 2s ease-out forwards;
         }
 
-        @keyframes venirDesdeFondo {
-            0% {
-                transform: translateZ(-1000px);
-                opacity: 0;
-            }
+        .timeline-item .content {
+            padding-left: 10px;
+        }
 
-            100% {
-                transform: translateZ(0);
-                opacity: 1;
-            }
+        .timeline-item img {
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        .timeline-item {
+            opacity: 0.3;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .timeline-item.active {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 
 <body>
-    <div class="contenedor">
-        <p class="texto">¡Hola Mundo!</p>
+
+    <div class="timeline">
+        <div class="progress-line" id="progress-line"></div>
+
+        <div class="timeline-item">
+            <div class="icon filled">❤️</div>
+            <div class="content">
+                <h4>17:30 HRS</h4>
+                <p>Ceremonia Religiosa</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1996/1996049.png" alt="Iglesia">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🤍</div>
+            <div class="content">
+                <h4>19:30 HRS</h4>
+                <p>Cocktail</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/3523/3523885.png" alt="Vestido">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="icon">🎉</div>
+            <div class="content">
+                <h4>21:00 HRS</h4>
+                <p>Fiesta</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fiesta">
+            </div>
+        </div>
     </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+    const timeline = document.querySelector('.timeline');
+    const progressLine = document.getElementById('progress-line');
+    const items = document.querySelectorAll('.timeline-item');
+
+    const timelineTop = timeline.offsetTop;
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const timelineHeight = timeline.offsetHeight;
+
+    // Calcular cuánto ha avanzado el scroll dentro del timeline
+    let scrolled = scrollTop + windowHeight - timelineTop;
+    scrolled = Math.max(0, Math.min(scrolled, timelineHeight));
+
+    // Calcular porcentaje y aplicar al height de la línea
+    const percentScrolled = (scrolled / timelineHeight) * 100;
+    progressLine.style.height = percentScrolled + '%';
+
+    // Activar ítems cuando entren en el viewport
+    items.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        if (itemTop < windowHeight * 0.8    ) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+});
+
+
+    </script>
 
 </body>
 

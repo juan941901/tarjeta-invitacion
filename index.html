@@ -10,7 +10,7 @@
         * {
             margin: 0;
             padding: 0;
-            
+
 
         }
 
@@ -138,7 +138,19 @@
             width: 498px;
         }
 
-        .contenedor_recepcion{
+        .contenedor_recepcion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-left: #000000 solid 1px;
+            border-right: #000000 solid 1px;
+            width: 498px;
+            padding-top: 3rem;
+        }
+
+        .contenedor_itinerario {
+            background-image: url("img/fondo-dorado-largo.webp");
             display: flex;
             justify-content: center;
             align-items: center;
@@ -166,6 +178,70 @@
             background-color: #3367D6;
         }
 
+         .timeline {
+            position: relative;
+            /* margin: 100px auto; */
+            width: 90%;
+            max-width: 500px;
+            padding-left: 40px;
+            border-left: 2px solid #ccc;
+        }
+
+        .progress-line {
+            position: absolute;
+            top: 0;
+            left: -1px;
+            width: 2px;
+            background: #2c3e50;
+            z-index: 1;
+            height: 0%;
+            transition: height 0.2s ease-out;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 150px;
+        }
+
+        .timeline-item .icon {
+            position: absolute;
+            left: -33px;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #eee;
+            color: #777;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .timeline-item .icon.filled {
+            background: #2c3e50;
+            color: white;
+        }
+
+        .timeline-item .content {
+            padding-left: 10px;
+        }
+
+        .timeline-item img {
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        .timeline-item {
+            opacity: 0.3;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .timeline-item.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
         @keyframes venirDesdeFondo {
             0% {
@@ -291,6 +367,50 @@
 
         </div>
     </div>
+    <div class="wrapper-hero">
+        <div class="contenedor_itinerario" >
+            <div class="timeline">
+                <div class="progress-line" id="progress-line"></div>
+                <div style="display: flex;flex-direction: column;margin-left: 1.5rem;">
+                <div class="timeline-item">
+                    <div class="icon filled" >⛪</div>
+                    <div class="content">
+                        <p style="font-size: 21px;">19:30 HRS</p>
+                        <p style="font-size: 35px;">Ceremonia Religiosa</p>
+                        <img src="img/iconocolordoradoiglesia-300x300.png" alt="Iglesia" style="width: 250px;">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="icon">🥂</div>
+                    <div class="content">
+                        <p style="font-size: 21px;">19:30 HRS</p>
+                        <p style="font-size: 35px;">Cocktail</p>
+                        <img src="img/EB-Iconos-web-41-300x300.png" alt="Vestido" style="width: 250px;">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="icon">🎉</div>
+                    <div class="content">
+                        <p style="font-size: 21px;">19:30 HRS</p>
+                        <p style="font-size: 35px;">Fiesta</p>
+                        <img src="img/iconocolordoradoplato-300x300.png" alt="Fiesta" style="width: 250px;">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="icon">🎶</div>
+                    <div class="content">
+                        <p style="font-size: 21px;">19:30 HRS</p>
+                        <p style="font-size: 35px;">A bailar</p>
+                        <img src="img/iconocolordoradomusica-300x300.png" alt="Fiesta" style="width: 250px;">
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // 🕒 Fecha destino (ajusta a la que necesites)
@@ -319,6 +439,35 @@
 
         const intervalo = setInterval(actualizarCuentaRegresiva, 1000);
         actualizarCuentaRegresiva(); // Ejecutar inmediatamente al cargar
+
+        window.addEventListener('scroll', () => {
+            const timeline = document.querySelector('.timeline');
+            const progressLine = document.getElementById('progress-line');
+            const items = document.querySelectorAll('.timeline-item');
+
+            const timelineTop = timeline.offsetTop;
+            const scrollTop = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const timelineHeight = timeline.offsetHeight;
+
+            // Calcular cuánto ha avanzado el scroll dentro del timeline
+            let scrolled = scrollTop + windowHeight - timelineTop;
+            scrolled = Math.max(0, Math.min(scrolled, timelineHeight));
+
+            // Calcular porcentaje y aplicar al height de la línea
+            const percentScrolled = (scrolled / timelineHeight) * 100;
+            progressLine.style.height = percentScrolled + '%';
+
+            // Activar ítems cuando entren en el viewport
+            items.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < windowHeight * 0.8) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        });
     </script>
 </body>
 
